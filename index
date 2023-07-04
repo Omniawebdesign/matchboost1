@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.company.com">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content="/images/social.jpg"/>
+    <meta property="og:image:secure_url" content="/images/social.jpg"/>
+
+    <!--Favicons-->
+    <!--Use https://realfavicongenerator.net/ to generate and download your favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="/images/landing-m.webp">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="critical.css"> <!-- Only above the fold css-->
+    <link rel="stylesheet" href="root.css">
+    
+
+    <!--Defer loading the whole page css-->
+    <link rel="stylesheet" href="local.css" media="print" onload="this.media='all'; this.onload=null;">
+
+    <!--If the user has javascript disbaled, load this stylesheet-->
+    <noscript>
+        <link rel="stylesheet" href="local.css">
+    </noscript>
+
+    <title>Company Name | What They Do | Town and State</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <div id="navigation">
+        <div aria-hidden="true" class="background-color-div">
+            <!--This div is used to overcome a z-index issue where the open
+                #navbar-menu is on top of the #navigation. This bar places itself 
+                the #navbar-menu so that menu appears behind the #navigation
+            -->
+        </div>
+        <div class="container">
+            <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+            <a class="logo" aria-label="click to go to home page" href="/index.html">
+                <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+                <img class="light" aria-hidden="true" src="logo.png" decoding="async" alt="logo" width="221" height="66">
+
+            
+            </a>
+
+            <!--Main Nav-->
+            <nav id="navbar-menu">
+                <ul>
+                    <li><a class="active" href="/index.html">Boost Ton Profil</a></li>
+                    <li><a href="/about.html">Qui sommes-nous</a></li>
+                    
+                    
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+           
+
+            <!--Mobile Nav toggle-->
+            <button class="hamburger-menu">
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- ============================================ -->
+        <!--                    LANDING                   -->
+        <!-- ============================================ -->
+    
+        <!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-855">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper"> #1 en France</span>
+            <h1 class="cs-title">Tu n'as pas assez de matchs ?
+
+                <br>
+                
+
+            </h1>
+            <h3>On a la solution !</h3>
+            <p class="cs-text">
+                
+                La concurrence sur tinder est rude, c'est pourquoi il est important de se demarquer avec les bonnes photos et la bonne stratégie. 
+                Votre profil tinder sera refais par des femmes pour plaire au femmes !
+            </p>
+            <a href="" class="cs-button-solid">Je boost mon profil !</a>
+
+
+            <div class="satisfied-users">
+    
+                <div class="user-ratings">
+                  <div class="user-profiles">
+                    <img src="pic1.png" alt="Profile 1">
+                    <img src="pic1.png" alt="Profile 2">
+                    <img src="pic1.png" alt="Profile 3">
+                  </div>
+                  <div class="stars">
+                    <img src="star3.png" alt="Star">
+                    <img src="star3.png" alt="Star">
+                    <img src="star3.png" alt="Star">
+                    <img src="star3.png" alt="Star">
+                    <img src="star3.png" alt="Star">
+                    <p>Rejoins plus de 17 671 clients satisfaits</p>
+                  </div>
+                </div>
+                
+              </div>
+
+
+        </div>
+
+
+        
+
+
+
+        <!--Hero Image-->
+        <picture class="cs-picture">
+            <!--Mobile-->
+            <source media="(max-width: 600px)" srcset="hero_img.png">
+            <!--Tablet-->
+            <source media="(min-width: 601px)" srcset="hero_img.png">
+            <!--Desktop-->
+            <source media="(min-width: 1024px)" srcset="hero_img.png">
+            <img aria-hidden="true" decoding="async" src="hero_img.png" alt="therapy" width="570" height="701">
+            </picture>
+    </div>
+    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+  
+</section>
+                                
+
+     <!-- ============================================ -->
+<!--                   Logos                      -->
+<!-- ============================================ -->
+
+<section id="logos-857">
+    <div class="cs-container">
+        <div class="cs-content">
+          <!--   <span class="cs-topper">Coverage</span> -->
+            <h2 class="cs-title">Fonctionne sur toutes les plateformes</h2>
+        </div>
+        <div class="cs-logo-group">
+            <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
+            <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo5.png" alt="logo" width="150" height="65" loading="lazy" decoding="async">
+            <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo6.png" alt="logo" width="150" height="55" loading="lazy" decoding="async">
+            <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo7.png" alt="logo" width="150" height="53" loading="lazy" decoding="async">
+            <img class="cs-logo" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos%2Flogo8.png" alt="logo" width="150" height="61" loading="lazy" decoding="async">
+            
+        </div>
+    </div>
+</section>
+                                
+                                
+
+
+
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-889">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Fonctionnement</span>
+            <h2 class="cs-title">L'Effet Match Booster</h2>
+            <p class="cs-text">
+                La meilleure methode pour booster ton nombre de matchs rapidement
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <h3>1</h3>
+                </picture>
+                <h3 class="cs-h3">Choisis une offre Match Booster</h3>
+                <p class="cs-item-p">
+                    Upload tes photos ou ton profil Tinder
+                </p>
+            </li>
+            <!--Arrow-->
+            <li class="cs-item cs-arrow" aria-hidden="true">
+                <img class="cs-arrow-img" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg" alt="icon" width="80" height="76" loading="lazy" decoding="async" aria-hidden="true">
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <h3>2</h3>
+                </picture>
+                <h3 class="cs-h3">Valide le paiement</h3>
+                <p class="cs-item-p">
+                    Ton profil sera passé en revu et optimisé par 10 femmes
+                </p>
+            </li>
+            <!--Arrow-->
+            <li class="cs-item cs-arrow" aria-hidden="true">
+                <img class="cs-arrow-img" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg" alt="icon" width="80" height="76" loading="lazy" decoding="async" aria-hidden="true">
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <h3>3</h3>
+                </picture>
+                <h3 class="cs-h3">Reçois ton profil optimisé par mail</h3>
+                <p class="cs-item-p">
+                    Applique les changements, swipe et match
+                </p>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">Je Passe à l'Action</a>
+    </div>
+</section>
+                                
+
+
+<!-- ============================================ -->
+<!--                  Pricing                     -->
+<!-- ============================================ -->
+
+<section id="pricing-356">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Nos forumules match booster</span>
+            <h2 class="cs-title">Il est temps de passer à l'action</h2>
+            <p class="cs-text">
+             Choisi parmis nos 3 offres ci-dessous et reçois ton offre sous 24h à 48h par email
+            </p>
+            <div class="cs-toggle-group">
+                <span id="cs-option1-356" class="cs-plan">Sans Feedback</span>
+                <div class="cs-toggle" aria-label="click to switch plans pricing">
+                    <span aria-hidden="true" class="cs-toggle-switch"></span>
+                </div>
+                <span id="cs-option2-356" class="cs-plan">Avec Feedback</span>
+            </div>
+        </div>
+        <ul class="cs-card-group">
+            <!-- Option 1 -->
+            <li class="cs-item">
+                <h3 class="cs-h3">Basic</h3>
+                <p class="cs-item-text">
+                    Perfect to get started.
+                </p>
+                <div class="cs-option-group">
+                    <span class="cs-price cs-option1-text">4.90€<span class="cs-small"></span></span>
+                    <span class="cs-price cs-option2-text">9.90€<span class="cs-small"></span></span>
+                </div>
+                <span class="cs-included">Package Includes</span>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        Vos 3 meilleures photos
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        Compte rendu des votes
+                    </li>
+                    <li class="cs-li cs-disabled">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        Modification de votre bio
+                    </li>
+                    <li class="cs-li cs-disabled">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        PDF personnalisé rédigé juste pour vous (critiques constructives et conseils après analyse de votre profil)
+                    </li>
+                    <li class="cs-li cs-disabled">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        ebook Tinder Hack (Algorithme,tinder reset,tinder blackbox,shadow ban etc)
+                    </li>
+                   
+                </ul>
+                <a href="https://match-booster.myshopify.com/checkouts/c/0ee110850132da2695a79f5d61886ca7/information" class="cs-button-solid">Acheter</a>
+            </li>
+            <!-- Option 2 -->
+            <li class="cs-item cs-popular">
+                <h3 class="cs-h3">Gold</h3>
+                <p class="cs-item-text">
+                    Perfect to get started.
+                </p>
+                <div class="cs-option-group">
+                    <span class="cs-price cs-option1-text">9.90€<span class="cs-small"></span></span>
+                    <span class="cs-price cs-option2-text">14.90€<span class="cs-small"></span></span>
+                </div>
+                <span class="cs-included">Package Includes</span>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        Vos 3 meilleures photos
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        Compte rendu des votes
+                    </li>
+                    <li class="cs-li ">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        Modification de votre bio
+                    </li>
+                    <li class="cs-li cs-disabled">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        PDF personnalisé rédigé juste pour vous (critiques constructives et conseils après analyse de votre profil)
+                    </li>
+                    <li class="cs-li cs-disabled">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        ebook Tinder Hack (Algorithme,tinder reset,tinder blackbox,shadow ban etc)
+                    </li>
+                    
+                </ul>
+                <a href="/basic.html" class="cs-button-solid">Acheter</a>
+            </li>
+            <!-- Option 3 -->
+            <li class="cs-item">
+                <h3 class="cs-h3">Platinium</h3>
+                <p class="cs-item-text">
+                    Le plus efficace
+                </p>
+                <div class="cs-option-group">
+                    <span class="cs-price cs-option1-text">19.90€<span class="cs-small"></span></span>
+                    <span class="cs-price cs-option2-text">19.90€<span class="cs-small"></span></span>
+                </div>
+                <span class="cs-included">Package Includes</span>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        Vos 3 meilleures photos
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        Compte rendu des votes
+                    </li>
+                    <li class="cs-li ">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        Modification de votre bio
+                    </li>
+                    <li class="cs-li ">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        PDF personnalisé rédigé juste pour vous (critiques constructives et conseils après analyse de votre profil)
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                        ebook Tinder Hack (Algorithme,tinder reset,tinder blackbox,shadow ban etc)
+                    </li>
+                    
+                </ul>
+                <a href="/basic.html" class="cs-button-solid">Acheter</a>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+
+
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-993">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">FAQ’s</span>
+            <h2 class="cs-title">Questions Fréquentes</h2>
+            <p class="cs-text">
+                
+            </p>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Combien de match vais-je obtenir ?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Cela dépend de la formule choisi, de notre expérience cela peut aller d'un x2 à un x10 par rapport à ton taux actuel.
+                    </p>
+                </li>
+
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Qu'est ce que l'option "Avec feedback"
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                       Cette option te permet d'avoir un retour sur le choix de tes photos.
+                       Avec l'offre "selection de tes 3 meilleures photos" tu recevra simplement tes 3 meilleures photos avec le nombre de votes, 
+                       avec l'option feedback tu reçois un compte rendu te permettant de comprendre le choix, cela te permet de mieux comprendre comment pensent
+                       les femmes et comment optimiser d'avantage tes futures photos.
+                       <br>
+                       L'option feedback est déjà intégré dans l'offre platinium.
+                    </p>
+                </li>
+
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Comment faire ?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                       Choisi simplement un pack, effectues le paiement, et tu recevra tes resultats par mail sous 24h à 48h selon la formule choisi 
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Qu'est ce qui est inclu dans le pack complet ?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                         Le pack complet te permet d'obetenir tes 3 meilleures photos, une bio amélioré, ainsi qu'un pdf personnalisé qui contiendra les éléments
+                         prise en compte dans le choix des photos, ainsi que des conseils constructifs pour améliorer votre profil davantages. La deuxième section du pdf
+                         adressera des points important comme le fonctionnement de l'algorithme tinder, les statistiques à connaitre ainsi que les choses à éviter, ainsi que les axes important à considérer
+                         pour améliorer votre succès. 
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Qui note mon profil?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                         Le choix de tes photos sera fait par systeme de vote avec 10 femmes qui travailent en interne, les 3 photos qui obtiendront le plus de votes vous seront communiqué dans l'ordre
+                         en commencant par la meilleure.
+                         Votre bio sera rédigé par notre rédactrice et validé en amont par l'ensemble des femmes de l'équipe pour un melleure résultat.
+
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Ais-je besoin de m'inscrire ?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Non, les ancien membre remarqueront que l'espace membre a été suprimé pour plus de simplicité, cela nous permet de vous simplifier la tâches et de booster votre profil en quelques cliques seuleent ! et de diminuer les cout de nos services grace à 
+                        un cout de maintenance réduit du site. 
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <img class="cs-floater1" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hands1.png" alt="hands" width="397" height="559">
+    <img class="cs-floater2" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hands2.png" alt="hands" width="322" height="354">
+</section>
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+    <!-- ============================================ -->
+    <!--                     FOOTER                   -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="left-section">
+                <a class="logo" href="/index.html"><img loading="lazy" decoding="async" src="logo.png" alt="logo" width="264" height="78"></a>
+                <p>
+                    Extra content if you need it, if not you can delete this whole p tag. I usually do.
+                </p>
+            </div>
+            <div class="right-section">
+                <div class="lists">
+                    <ul>
+                        <li><h2>Information</h2></li>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/projects.html">Projects</a></li>
+                        <li><a href="/testimonials.html">Reviews</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li><h2>Services</h2></li>
+                        <li>Service1</li>
+                        <li>Service2</li>
+                        <li>Service4</li>
+                        <li>Service5</li>
+                    </ul>
+                    <ul>
+                        <li><h2>Contact</h2></li>
+                        <li><a href="/contact.html">First Address Line<br>Denver CO 80206</a></li>
+                        <li><a href="tel:555-779-4407">T: (555) 779-4407</a></li>
+                        <li><a href="mailto:email@email.com">Click to Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit">
+            <span>Designed and Hand Coded by</span>
+            <a href="" target="_blank" rel="noopener">Your Company Name</a>
+            <span class="copyright"> Copyright 2021 - Present</span></div>
+    </footer>
+
+
+    <script defer src="/nav.js"></script>
+    <script defer src="/dark.js"></script>
+    <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+    
+
+<script>
+const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+    </script>   
+    
+    
+
+    <script>
+        const toggle = document.querySelector("#pricing-356 .cs-toggle");
+        const option1 = document.querySelector("#pricing .cs-toggle-group #cs-option1");
+        const option2 = document.querySelector("#pricing .cs-toggle-group #cs-option2");
+        const optionGroup = Array.from(document.querySelectorAll('.cs-option-group'))
+
+        toggle.addEventListener('click', (e) => { 
+            for (const item of optionGroup) {
+                item.classList.toggle("option2-active");
+            }
+            toggle.classList.toggle("active");
+        });
+        option1.addEventListener('click', (e) => { 
+            for (const item of optionGroup) {
+                item.classList.remove("option2-active");
+            }
+            toggle.classList.remove("active");
+        });
+        option2.addEventListener('click', (e) => { 
+            for (const item of optionGroup) {
+                item.classList.add("option2-active");
+            }
+            toggle.classList.add("active");
+        });
+                                
+    </script>
+
+
+
+<script>
+const selectImage = document.querySelector('.select-image');
+    const inputFile = document.querySelector('#file');
+    const imgArea = document.querySelector('.img-area');
+    
+    selectImage.addEventListener('click', function () {
+        inputFile.click();
+    })
+    
+    inputFile.addEventListener('change', function () {
+        const image = this.files[0]
+        if(image.size < 2000000) {
+            const reader = new FileReader();
+            reader.onload = ()=> {
+                const allImg = imgArea.querySelectorAll('img');
+                allImg.forEach(item=> item.remove());
+                const imgUrl = reader.result;
+                const img = document.createElement('img');
+                img.src = imgUrl;
+                imgArea.appendChild(img);
+                imgArea.classList.add('active');
+                imgArea.dataset.img = image.name;
+            }
+            reader.readAsDataURL(image);
+        } else {
+            alert("Image size more than 2MB");
+        }
+    })
+    </script>
+
+    
+</body>
+</html>
