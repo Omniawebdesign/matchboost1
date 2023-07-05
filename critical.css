@@ -76,6 +76,7 @@
       margin: 0 auto 1rem 0;
       color: var(--headerColor);
       position: relative;
+        margin-top: 14px;
     }
     #hero-855 .cs-text {
       /* 16px - 20px */
