@@ -156,7 +156,7 @@
 /* Mobile - Top Drop Down */
 @media only screen and (max-width: 1023px) {
   #navigation {
-    position: fixed;
+   /*-- position: fixed; -*/
     top: 0;
     left: 0;
     width: 100%;
