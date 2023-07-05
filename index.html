@@ -291,7 +291,8 @@
                     </li>
                    
                 </ul>
-                <a href="https://match-booster.myshopify.com/checkouts/c/0ee110850132da2695a79f5d61886ca7/information" class="cs-button-solid">Acheter</a>
+                
+                <a href="https://m" class="cs-button-solid" data-alternative-href="https://m2">Acheter</a>
             </li>
             <!-- Option 2 -->
             <li class="cs-item cs-popular">
@@ -327,7 +328,8 @@
                     </li>
                     
                 </ul>
-                <a href="/basic.html" class="cs-button-solid">Acheter</a>
+                
+                <a href="/basic.html" class="cs-button-solid" data-alternative-href="/basic2.html">Acheter</a>
             </li>
             <!-- Option 3 -->
             <li class="cs-item">
@@ -545,29 +547,48 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
     
 
     <script>
-        const toggle = document.querySelector("#pricing-356 .cs-toggle");
-        const option1 = document.querySelector("#pricing .cs-toggle-group #cs-option1");
-        const option2 = document.querySelector("#pricing .cs-toggle-group #cs-option2");
-        const optionGroup = Array.from(document.querySelectorAll('.cs-option-group'))
+       const toggle = document.querySelector("#pricing-356 .cs-toggle");
+const option1 = document.querySelector("#pricing .cs-toggle-group #cs-option1");
+const option2 = document.querySelector("#pricing .cs-toggle-group #cs-option2");
+const optionGroup = Array.from(document.querySelectorAll('.cs-option-group'));
+const disabledElements = document.querySelectorAll('.cs-ebook');
 
-        toggle.addEventListener('click', (e) => { 
-            for (const item of optionGroup) {
-                item.classList.toggle("option2-active");
-            }
-            toggle.classList.toggle("active");
-        });
-        option1.addEventListener('click', (e) => { 
-            for (const item of optionGroup) {
-                item.classList.remove("option2-active");
-            }
-            toggle.classList.remove("active");
-        });
-        option2.addEventListener('click', (e) => { 
-            for (const item of optionGroup) {
-                item.classList.add("option2-active");
-            }
-            toggle.classList.add("active");
-        });
+toggle.addEventListener('click', () => {
+    for (const item of optionGroup) {
+        item.classList.toggle("option2-active");
+    }
+    toggle.classList.toggle("active");
+
+    disabledElements.forEach(element => {
+        if (element.style.opacity === "unset") {
+            element.style.opacity = "";
+        } else {
+            element.style.opacity = "unset";
+        }
+    });
+});
+
+option1.addEventListener('click', () => {
+    for (const item of optionGroup) {
+        item.classList.remove("option2-active");
+    }
+    toggle.classList.remove("active");
+
+    disabledElements.forEach(element => {
+        element.style.opacity = "";
+    });
+});
+
+option2.addEventListener('click', () => {
+    for (const item of optionGroup) {
+        item.classList.add("option2-active");
+    }
+    toggle.classList.add("active");
+
+    disabledElements.forEach(element => {
+        element.style.opacity = "unset";
+    });
+});
                                 
     </script>
 
@@ -603,6 +624,31 @@ const selectImage = document.querySelector('.select-image');
     })
     </script>
 
-    
+    <script>
+    window.onload = function() {
+        let toggle = document.querySelector(".cs-toggle");
+        let buttons = document.querySelectorAll(".cs-button-solid");
+        let option1 = true;
+        
+        toggle.addEventListener("click", function() {
+            option1 = !option1;
+            for(let button of buttons){
+                let href = button.getAttribute('href');
+                let dataHref = button.getAttribute('data-alternative-href');
+                if(option1){
+                    if(dataHref){
+                        button.setAttribute('href', dataHref);
+                        button.setAttribute('data-alternative-href', href);
+                    }
+                } else {
+                    if(dataHref){
+                        button.setAttribute('href', dataHref);
+                        button.setAttribute('data-alternative-href', href);
+                    }
+                }
+            }
+        });
+    }
+</script>
 </body>
 </html>
