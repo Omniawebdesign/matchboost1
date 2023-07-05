@@ -1862,6 +1862,7 @@
 
 .user-profiles {
   margin-top: 10px;
+  display:  inherit;
 }
 
 .user-profiles img {
