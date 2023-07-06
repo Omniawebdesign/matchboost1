@@ -1657,6 +1657,7 @@
     top: 1.25rem;
     right: -3.75rem;
     transform: rotate(42deg);
+    margin-right: 7px;
   }
   #pricing-356 .cs-popular .cs-h3,
   #pricing-356 .cs-popular .cs-item-text,
